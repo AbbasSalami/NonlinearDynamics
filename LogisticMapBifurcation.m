@@ -25,10 +25,10 @@ for r = rmin:rstep:rmax
     output{c,2} = r;
 end
 figure;
-curve = animatedline('Color','b','Marker','.','Linestyle','none');
+curve = animatedline('Color','k','Marker','.','Linestyle','none');
 set(gca,'Xlim',[rmin rmax],'Ylim',[0 1])
 grid on;
-title('Bifurcation Diagram')
+title('Bifurcation Diagram of the logistic map')
 xlabel('r')
 ylabel('x')
 for i = 1:size(output,1)
@@ -38,5 +38,3 @@ for i = 1:size(output,1)
     end
 end
 end
-
-    
